@@ -51,7 +51,7 @@
         document.getElementById("myForm").addEventListener("submit", function (event) {
             event.preventDefault();
 
-            // Collecting form data
+            
             let name = document.getElementById("name").value;
             let address = document.getElementById("address").value;
             let contact = document.getElementById("contact").value;
@@ -61,7 +61,7 @@
 
             alert("Form submitted successfully!");
 
-            // Save to localStorage to display on thankyou page
+           
             localStorage.setItem("formData", JSON.stringify({
                 name, address, contact, birthdate, age, hobbies
             }));
